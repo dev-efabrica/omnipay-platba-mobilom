@@ -14,7 +14,9 @@ script:
     - mkdir -p build/logs
     - mkdir temp
     - composer outdated -D --strict
+    - composer require --dev squizlabs/php_codesniffer
     - vendor/bin/phpcs src --standard=PSR2 -n
+    - composer remove --dev squizlabs/php_codesniffer
     - vendor/bin/phpunit --coverage-text
 
 after_success:
