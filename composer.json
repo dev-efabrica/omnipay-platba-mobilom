@@ -1,0 +1,37 @@
+{
+    "name": "efabrica/omnipay-platba-mobilom",
+    "type": "library",
+    "description": "Platba mobilom driver for the Omnipay payment processing library",
+    "keywords": [
+        "Platba mobilom",
+        "online",
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment"
+    ],
+    "homepage": "https://github.com/efabrica/omnipay-platba-mobilom",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Team eFabrica a.s.",
+            "email": "dev@efabrica.sk"
+        }
+    ],
+    "autoload": {
+        "psr-4": { 
+            "Omnipay\\PlatbaMobilom\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">= 7.1.0",
+        "omnipay/common": "^2.0 | ^3.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "^2.0 | ^3.0"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
